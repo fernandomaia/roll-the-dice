@@ -8,8 +8,10 @@ var num2 = 6;
 document.getElementById('rollButton').onclick = function() {
     var result = randomInt(num1, num2);
     if(result > 3) {
-        alert("I won! It was a " + result + ".");
+        document.getElementById("result").style.display = "block";
+        document.getElementById("result").innerHTML = "<strong>I won!</strong> It was a " + result + ".";
     } else {
-        alert("You won! It was a " + result + ".");
+        document.getElementById("result").style.display = "block";
+        document.getElementById("result").innerHTML = "<strong>You won!</strong> It was a " + result + ".";
     }
 }
